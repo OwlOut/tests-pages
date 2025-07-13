@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test Coverage</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(270deg, #4b0082, #2e0854, #6a0dad, #2e0854);
+        background-size: 800% 800%;
+        animation: gradientAnimation 20s ease infinite;
+        color: #f0f0f0;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
+
+    .container {
+        background: #1e1e2f;
+        max-width: 420px;
+        width: 100%;
+        padding: 2.5rem 3rem;
+        border-radius: 16px;
+        box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+        text-align: center;
+        border: 2px solid #4b0082;
+        transition: transform 0.3s ease;
+    }
+    .container:hover {
+        transform: scale(1.03);
+        box-shadow: 0 16px 48px rgba(0,0,0,0.7);
+    }
+    h1 {
+        margin-bottom: 2rem;
+        font-weight: 800;
+        color: #c292ff;
+        font-size: 2.4rem;
+        text-shadow: 0 0 10px #c292ffaa;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin: 1.2rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        color: #b9a2ff;
+        cursor: pointer;
+        transition: color 0.25s ease;
+    }
+    li:hover {
+        color: #d1bbff;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.25s ease;
+    }
+    a:hover {
+        color: #d1bbff;
+        text-decoration: underline;
+    }
+    .emoji {
+        font-size: 1.5rem;
+        user-select: none;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Test Coverage</h1>
+    <ul>
+      <li>
+        <span class="emoji">🚀</span>
+        <a href="./app-nextjs/lcov-report/index.html">app-nextjs</a>
+      </li>
+      <li>
+        <span class="emoji">🛠️</span>
+        <a href="./api-main/lcov-report/index.html">api-main</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
